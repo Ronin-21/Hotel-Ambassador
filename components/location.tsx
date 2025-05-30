@@ -1,0 +1,72 @@
+export default function Location() {
+  return (
+    <section id="ubicacion" className="py-20 bg-white">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-4">Nuestra Ubicación</h2>
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            Estratégicamente ubicado en el corazón de la ciudad, con fácil acceso a las principales atracciones
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div className="space-y-6">
+            <div>
+              <h3 className="text-2xl font-light text-gray-900 mb-4">Dirección</h3>
+              <p className="text-gray-700 text-lg">
+                Avenida Principal 123
+                <br />
+                Centro Histórico
+                <br />
+                Ciudad, País 12345
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-2xl font-light text-gray-900 mb-4">Puntos de Interés Cercanos</h3>
+              <ul className="space-y-2 text-gray-700">
+                <li className="flex justify-between">
+                  <span>Centro Comercial Plaza</span>
+                  <span className="text-[#268367]">2 min</span>
+                </li>
+                <li className="flex justify-between">
+                  <span>Museo de Arte Contemporáneo</span>
+                  <span className="text-[#268367]">5 min</span>
+                </li>
+                <li className="flex justify-between">
+                  <span>Catedral Principal</span>
+                  <span className="text-[#268367]">8 min</span>
+                </li>
+                <li className="flex justify-between">
+                  <span>Aeropuerto Internacional</span>
+                  <span className="text-[#268367]">25 min</span>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="text-2xl font-light text-gray-900 mb-4">Transporte</h3>
+              <p className="text-gray-700">
+                Servicio de traslado gratuito desde el aeropuerto. Estación de metro a 3 cuadras. Estacionamiento
+                privado disponible para huéspedes.
+              </p>
+            </div>
+          </div>
+
+          <div className="relative h-96 lg:h-full min-h-[400px] rounded-lg overflow-hidden shadow-lg">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345093747!2d144.9537353153167!3d-37.81627997975171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d4c2b349649%3A0xb6899234e561db11!2sEnvato!5e0!3m2!1sen!2sau!4v1635749293267!5m2!1sen!2sau"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Ubicación Hotel Elegante"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}

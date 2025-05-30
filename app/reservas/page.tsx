@@ -1,14 +1,26 @@
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { Calendar } from "@/components/ui/calendar"
-import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover"
-import { es } from "date-fns/locale"
-import { CalendarIcon, BedDouble, Users, Check } from "lucide-react"
-import Image from "next/image"
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Calendar } from "@/components/ui/calendar";
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/components/ui/popover";
+import { es } from "date-fns/locale";
+import { CalendarIcon, BedDouble, Users, Check } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
+import { RoomCard } from "@/components/room-card";
 
 export default function ReservationsPage() {
   return (
@@ -23,12 +35,55 @@ export default function ReservationsPage() {
           priority
         />
         <div className="absolute inset-0 flex items-center justify-center">
-          <h1 className="text-4xl font-bold text-white sm:text-5xl md:text-6xl">Reservas</h1>
+          <h1 className="text-4xl font-bold text-white sm:text-5xl md:text-6xl">
+            Reservas
+          </h1>
+        </div>
+      </section>
+
+      {/* Rooms Section */}
+      <section className="py-16 px-4 bg-slate-50">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl font-bold text-center mb-4">Our Rooms</h2>
+          <p className="text-center text-slate-600 mb-12 max-w-3xl mx-auto">
+            Choose from our selection of comfortable and luxurious rooms
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <RoomCard
+              title="Standard Room"
+              description="Comfortable room with all basic amenities"
+              price={99}
+              image="/placeholder.svg?height=300&width=400"
+              features={["Queen Bed", "Free Wi-Fi", "TV", "Air Conditioning"]}
+              slug="standard-room"
+            />
+            <RoomCard
+              title="Deluxe Room"
+              description="Spacious room with premium amenities"
+              price={149}
+              image="/placeholder.svg?height=300&width=400"
+              features={["King Bed", "Free Wi-Fi", "Smart TV", "Mini Bar"]}
+              slug="deluxe-room"
+            />
+            <RoomCard
+              title="Suite"
+              description="Luxury suite with separate living area"
+              price={249}
+              image="/placeholder.svg?height=300&width=400"
+              features={["King Bed", "Living Room", "Jacuzzi", "Ocean View"]}
+              slug="suite"
+            />
+          </div>
+          <div className="text-center mt-12">
+            <Button asChild size="lg">
+              <Link href="/rooms">View All Rooms</Link>
+            </Button>
+          </div>
         </div>
       </section>
 
       {/* Booking Section */}
-      <section className="py-16 px-4 md:px-6">
+      {/* <section className="py-16 px-4 md:px-6">
         <div className="container mx-auto max-w-4xl">
           <div className="mb-12 text-center">
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Reserve su Estancia</h2>
@@ -224,12 +279,14 @@ export default function ReservationsPage() {
             </CardContent>
           </Card>
         </div>
-      </section>
+      </section> */}
 
       {/* Room Types Section */}
       <section className="bg-gray-50 py-16 px-4 md:px-6">
         <div className="container mx-auto">
-          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-center mb-12">Nuestras Habitaciones</h2>
+          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-center mb-12">
+            Nuestras Habitaciones
+          </h2>
           <div className="grid gap-8 md:grid-cols-2">
             <Card className="overflow-hidden border-none shadow-md">
               <div className="relative h-64">
@@ -252,8 +309,9 @@ export default function ReservationsPage() {
                   <span>2 Personas</span>
                 </div>
                 <p className="mt-4 text-gray-600">
-                  Nuestras habitaciones Deluxe ofrecen un espacio elegante y confortable con vistas impresionantes.
-                  Disfrute de amenidades premium y un servicio excepcional.
+                  Nuestras habitaciones Deluxe ofrecen un espacio elegante y
+                  confortable con vistas impresionantes. Disfrute de amenidades
+                  premium y un servicio excepcional.
                 </p>
                 <ul className="mt-4 grid grid-cols-2 gap-2 text-sm">
                   <li className="flex items-center">
@@ -273,7 +331,9 @@ export default function ReservationsPage() {
                     <span>Baño de lujo</span>
                   </li>
                 </ul>
-                <Button className="mt-6 w-full bg-amber-500 hover:bg-amber-600 text-white">Reservar Ahora</Button>
+                <Button className="mt-6 w-full bg-amber-500 hover:bg-amber-600 text-white">
+                  Reservar Ahora
+                </Button>
               </CardContent>
             </Card>
             <Card className="overflow-hidden border-none shadow-md">
@@ -297,8 +357,9 @@ export default function ReservationsPage() {
                   <span>2-3 Personas</span>
                 </div>
                 <p className="mt-4 text-gray-600">
-                  Experimente el lujo definitivo en nuestras espaciosas Suites Ejecutivas, con sala de estar separada y
-                  amenidades exclusivas para una estancia inolvidable.
+                  Experimente el lujo definitivo en nuestras espaciosas Suites
+                  Ejecutivas, con sala de estar separada y amenidades exclusivas
+                  para una estancia inolvidable.
                 </p>
                 <ul className="mt-4 grid grid-cols-2 gap-2 text-sm">
                   <li className="flex items-center">
@@ -318,12 +379,17 @@ export default function ReservationsPage() {
                     <span>Desayuno incluido</span>
                   </li>
                 </ul>
-                <Button className="mt-6 w-full bg-amber-500 hover:bg-amber-600 text-white">Reservar Ahora</Button>
+                <Button className="mt-6 w-full bg-amber-500 hover:bg-amber-600 text-white">
+                  Reservar Ahora
+                </Button>
               </CardContent>
             </Card>
           </div>
           <div className="mt-8 text-center">
-            <Button variant="outline" className="border-amber-500 text-amber-500 hover:bg-amber-50">
+            <Button
+              variant="outline"
+              className="border-amber-500 text-amber-500 hover:bg-amber-50"
+            >
               Ver Todas las Habitaciones
             </Button>
           </div>
@@ -333,41 +399,47 @@ export default function ReservationsPage() {
       {/* Policies Section */}
       <section className="py-16 px-4 md:px-6">
         <div className="container mx-auto max-w-4xl">
-          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-center mb-12">Políticas de Reserva</h2>
+          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-center mb-12">
+            Políticas de Reserva
+          </h2>
           <div className="space-y-8">
             <div>
               <h3 className="text-xl font-bold">Check-in / Check-out</h3>
               <p className="mt-2 text-gray-600">
-                El horario de check-in es a partir de las 15:00 horas. El check-out debe realizarse antes de las 12:00
-                horas. Consulte sobre la posibilidad de early check-in o late check-out (sujeto a disponibilidad y cargo
-                adicional).
+                El horario de check-in es a partir de las 15:00 horas. El
+                check-out debe realizarse antes de las 12:00 horas. Consulte
+                sobre la posibilidad de early check-in o late check-out (sujeto
+                a disponibilidad y cargo adicional).
               </p>
             </div>
             <div>
               <h3 className="text-xl font-bold">Cancelaciones</h3>
               <p className="mt-2 text-gray-600">
-                Las cancelaciones realizadas con más de 48 horas de antelación recibirán un reembolso completo. Las
-                cancelaciones dentro de las 48 horas previas a la llegada están sujetas a un cargo equivalente a una
-                noche de estancia.
+                Las cancelaciones realizadas con más de 48 horas de antelación
+                recibirán un reembolso completo. Las cancelaciones dentro de las
+                48 horas previas a la llegada están sujetas a un cargo
+                equivalente a una noche de estancia.
               </p>
             </div>
             <div>
               <h3 className="text-xl font-bold">Depósito</h3>
               <p className="mt-2 text-gray-600">
-                Se requiere un depósito equivalente al costo de una noche al momento de la reserva para garantizarla.
-                Este depósito se aplicará al costo total de su estancia.
+                Se requiere un depósito equivalente al costo de una noche al
+                momento de la reserva para garantizarla. Este depósito se
+                aplicará al costo total de su estancia.
               </p>
             </div>
             <div>
               <h3 className="text-xl font-bold">Mascotas</h3>
               <p className="mt-2 text-gray-600">
-                Grand Hotel es pet-friendly en habitaciones seleccionadas. Se aplica un cargo adicional por mascota. Por
-                favor, infórmenos al momento de su reserva si viajará con mascotas.
+                Grand Hotel es pet-friendly en habitaciones seleccionadas. Se
+                aplica un cargo adicional por mascota. Por favor, infórmenos al
+                momento de su reserva si viajará con mascotas.
               </p>
             </div>
           </div>
         </div>
       </section>
     </div>
-  )
+  );
 }
