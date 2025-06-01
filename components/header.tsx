@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import Image from "next/image";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,7 +23,12 @@ export default function Header() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <Link href="#inicio" className="text-2xl font-bold text-[#268367]">
-            Hotel Elegante
+            <Image
+              src={"/Ambassador-logo2.svg"}
+              alt="logo"
+              width={200}
+              height={100}
+            />
           </Link>
 
           {/* Desktop Navigation */}
@@ -31,7 +37,7 @@ export default function Header() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="text-gray-700 hover:text-[#268367] transition-colors duration-200 font-medium"
+                className="text-gray-700 hover:text-[#268367] transition-colors duration-200"
               >
                 {item.label}
               </Link>
