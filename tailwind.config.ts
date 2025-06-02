@@ -74,8 +74,9 @@ const config: Config = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       fontFamily: {
-        primary: ["Lato", "serif"],
-        title: ["'Alegreya'", "serif"],
+        primary: ["Nunito", "serif"],
+        secondary: ["Lora", "serif"],
+        title: ["'Playfair'", "serif"],
       },
     },
   },

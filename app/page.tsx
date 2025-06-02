@@ -13,7 +13,6 @@ export default function Home() {
       <Amenities />
       <Gallery />
       <Packages />
-      <History />
       <Location />
       <WhatsAppButton />
     </main>

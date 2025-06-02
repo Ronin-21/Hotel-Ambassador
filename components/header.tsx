@@ -15,7 +15,7 @@ export default function Header() {
     { href: "/galeria", label: "Galería" },
     { href: "/reservas", label: "Reservas" },
     { href: "/nosotros", label: "Historia" },
-    { href: "#ubicacion", label: "Ubicación" },
+    { href: "/contacto", label: "Contacto" },
   ];
 
   return (
@@ -32,7 +32,7 @@ export default function Header() {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden md:flex items-center space-x-8 font-medium">
             {navItems.map((item) => (
               <Link
                 key={item.href}

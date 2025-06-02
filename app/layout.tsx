@@ -1,18 +1,24 @@
-import type { Metadata } from "next";
-import "./globals.css";
-import { Alegreya, Lato } from "next/font/google";
-import Header from "@/components/header";
 import Footer from "@/components/footer";
+import Header from "@/components/header";
+import type { Metadata } from "next";
+import { Lora, Nunito, Playfair_Display } from "next/font/google";
+import "./globals.css";
 
-const fontAlegreya = Alegreya({
-  variable: "--font-alegreya",
+const fontPlayfair = Playfair_Display({
+  variable: "--font-playfair",
   subsets: ["latin", "latin-ext"], // Aquí puedes agregar los subconjuntos que necesites
   preload: true, // Asegúrate de que esté habilitado si lo deseas
 });
 
-const fontLato = Lato({
-  variable: "--font-lato",
-  weight: ["100", "300", "400", "700", "900"],
+const fontLora = Lora({
+  variable: "--font-lora",
+  subsets: ["latin", "latin-ext"], // Aquí puedes agregar los subconjuntos que necesites
+  preload: true, // Asegúrate de que esté habilitado si lo deseas
+});
+
+const fontNunito = Nunito({
+  variable: "--font-nunito",
+  weight: ["300", "400", "500", "700", "900"],
   subsets: ["latin", "latin-ext"], // Aquí puedes agregar los subconjuntos que necesites
   preload: true, // Asegúrate de que esté habilitado si lo deseas
 });
@@ -37,7 +43,7 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body
-        className={`${fontAlegreya.variable} ${fontLato.variable} antialiased min-h-screen bg-white`}
+        className={`${fontPlayfair.variable} ${fontNunito.variable} ${fontLora.variable} antialiased min-h-screen bg-white`}
       >
         <div className="flex min-h-screen flex-col">
           <Header />

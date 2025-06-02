@@ -36,7 +36,7 @@ export default function Hero() {
           <Button
             size="lg"
             variant="outline"
-            className="border-white text-white hover:bg-white hover:text-[#268367] px-8 py-3 text-lg"
+            className="border-white text-[#268367] hover:bg-white hover:text-[#1e6650] px-8 py-3 text-lg"
           >
             Ver Galería
           </Button>

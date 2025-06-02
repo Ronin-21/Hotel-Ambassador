@@ -1,26 +1,9 @@
+import { RoomCard } from "@/components/room-card";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Calendar } from "@/components/ui/calendar";
-import {
-  Popover,
-  PopoverContent,
-  PopoverTrigger,
-} from "@/components/ui/popover";
-import { es } from "date-fns/locale";
-import { CalendarIcon, BedDouble, Users, Check } from "lucide-react";
+import { BedDouble, Check, Users } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { RoomCard } from "@/components/room-card";
 
 export default function ReservationsPage() {
   return (
@@ -28,7 +11,7 @@ export default function ReservationsPage() {
       {/* Hero Section */}
       <section className="relative h-[40vh] w-full">
         <Image
-          src="/placeholder.svg?height=800&width=1920"
+          src="/placeholder.jpg?height=800&width=1920"
           alt="Grand Hotel Room"
           fill
           className="object-cover brightness-75"
@@ -53,7 +36,7 @@ export default function ReservationsPage() {
               title="Standard Room"
               description="Comfortable room with all basic amenities"
               price={99}
-              image="/placeholder.svg?height=300&width=400"
+              image="/placeholder.jpg?height=300&width=400"
               features={["Queen Bed", "Free Wi-Fi", "TV", "Air Conditioning"]}
               slug="standard-room"
             />
@@ -61,7 +44,7 @@ export default function ReservationsPage() {
               title="Deluxe Room"
               description="Spacious room with premium amenities"
               price={149}
-              image="/placeholder.svg?height=300&width=400"
+              image="/placeholder.jpg?height=300&width=400"
               features={["King Bed", "Free Wi-Fi", "Smart TV", "Mini Bar"]}
               slug="deluxe-room"
             />
@@ -69,7 +52,7 @@ export default function ReservationsPage() {
               title="Suite"
               description="Luxury suite with separate living area"
               price={249}
-              image="/placeholder.svg?height=300&width=400"
+              image="/placeholder.jpg?height=300&width=400"
               features={["King Bed", "Living Room", "Jacuzzi", "Ocean View"]}
               slug="suite"
             />
@@ -291,7 +274,7 @@ export default function ReservationsPage() {
             <Card className="overflow-hidden border-none shadow-md">
               <div className="relative h-64">
                 <Image
-                  src="/placeholder.svg?height=400&width=600"
+                  src="/placeholder.jpg?height=400&width=600"
                   alt="Habitación Deluxe"
                   fill
                   className="object-cover"
@@ -339,7 +322,7 @@ export default function ReservationsPage() {
             <Card className="overflow-hidden border-none shadow-md">
               <div className="relative h-64">
                 <Image
-                  src="/placeholder.svg?height=400&width=600"
+                  src="/placeholder.jpg?height=400&width=600"
                   alt="Suite Ejecutiva"
                   fill
                   className="object-cover"
