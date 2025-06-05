@@ -74,9 +74,9 @@ const config: Config = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       fontFamily: {
-        primary: ["Nunito", "serif"],
+        primary: ["Poppins", "serif"],
         secondary: ["Lora", "serif"],
-        title: ["'Playfair'", "serif"],
+        title: ["'Marcellus'", "serif"],
       },
     },
   },

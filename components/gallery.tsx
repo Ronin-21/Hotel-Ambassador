@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Button from "./button";
 
 export default function Gallery() {
   const images = [
@@ -8,15 +9,12 @@ export default function Gallery() {
       src: "/placeholder.jpg?height=600&width=800",
       alt: "Restaurante gourmet",
     },
-    { src: "/placeholder.jpg?height=600&width=800", alt: "Piscina infinita" },
-    { src: "/placeholder.jpg?height=600&width=800", alt: "Spa y wellness" },
-    { src: "/placeholder.jpg?height=600&width=800", alt: "Vista panorámica" },
   ];
 
   return (
     <section id="galeria" className="py-20 bg-gray-50">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+      <div className="container flex flex-col gap-10">
+        <div className="text-center">
           <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-4 font-title">
             Galería
           </h2>
@@ -44,6 +42,11 @@ export default function Gallery() {
             </div>
           ))}
         </div>
+        <Button className="self-center">
+          <a href="/gallery" className="text-white">
+            Ver más
+          </a>
+        </Button>
       </div>
     </section>
   );

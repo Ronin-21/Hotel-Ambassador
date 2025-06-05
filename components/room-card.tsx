@@ -1,23 +1,34 @@
-import Image from "next/image"
-import Link from "next/link"
-import { Check } from "lucide-react"
-
-import { Button } from "@/components/ui/button"
+import Image from "next/image";
+import Link from "next/link";
+import { Check } from "lucide-react";
+import Button from "./button";
 
 interface RoomCardProps {
-  title: string
-  description: string
-  price: number
-  image: string
-  features: string[]
-  slug: string
+  title: string;
+  description: string;
+  price: number;
+  image: string;
+  features: string[];
+  slug: string;
 }
 
-export function RoomCard({ title, description, price, image, features, slug }: RoomCardProps) {
+export function RoomCard({
+  title,
+  description,
+  price,
+  image,
+  features,
+  slug,
+}: RoomCardProps) {
   return (
     <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
       <div className="relative h-48">
-        <Image src={image || "/placeholder.svg"} alt={title} fill className="object-cover" />
+        <Image
+          src={image || "/placeholder.svg"}
+          alt={title}
+          fill
+          className="object-cover"
+        />
       </div>
       <div className="p-6">
         <h3 className="text-xl font-semibold mb-2">{title}</h3>
@@ -36,13 +47,14 @@ export function RoomCard({ title, description, price, image, features, slug }: R
 
         <div className="flex items-center justify-between">
           <div className="text-lg font-bold">
-            ${price} <span className="text-sm font-normal text-slate-600">/ night</span>
+            ${price}{" "}
+            <span className="text-sm font-normal text-slate-600">/ night</span>
           </div>
-          <Button asChild>
+          <Button>
             <Link href={`/rooms/${slug}`}>View Details</Link>
           </Button>
         </div>
       </div>
     </div>
-  )
+  );
 }

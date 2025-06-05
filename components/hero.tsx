@@ -1,5 +1,5 @@
-import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Button from "./button";
 
 export default function Hero() {
   return (
@@ -29,14 +29,14 @@ export default function Hero() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button
             size="lg"
-            className="bg-[#268367] hover:bg-[#1e6b52] text-white px-8 py-3 text-lg"
+            className="bg-[#268367] hover:bg-[#1e6b52] text-white text-lg"
           >
             Explorar Habitaciones
           </Button>
           <Button
             size="lg"
             variant="outline"
-            className="border-white text-[#268367] hover:bg-white hover:text-[#1e6650] px-8 py-3 text-lg"
+            className="border-white text-[#268367] hover:bg-white hover:text-[#1e6650] text-lg"
           >
             Ver Galería
           </Button>

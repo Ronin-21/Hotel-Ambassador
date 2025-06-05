@@ -3,9 +3,9 @@
 import { useState } from "react";
 import Link from "next/link";
 import { Menu } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import Image from "next/image";
+import Button from "./button";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -42,9 +42,7 @@ export default function Header() {
                 {item.label}
               </Link>
             ))}
-            <Button className="bg-[#268367] hover:bg-[#1e6b52] text-white">
-              Reservar Ahora
-            </Button>
+            <Button>Reservar Ahora</Button>
           </nav>
 
           {/* Mobile Navigation */}

@@ -1,11 +1,12 @@
 import Footer from "@/components/footer";
 import Header from "@/components/header";
 import type { Metadata } from "next";
-import { Lora, Nunito, Playfair_Display } from "next/font/google";
+import { Lora, Marcellus, Poppins } from "next/font/google";
 import "./globals.css";
 
-const fontPlayfair = Playfair_Display({
-  variable: "--font-playfair",
+const fontMarcellus = Marcellus({
+  variable: "--font-marcellus",
+  weight: "400", // Puedes ajustar el peso según tus necesidades
   subsets: ["latin", "latin-ext"], // Aquí puedes agregar los subconjuntos que necesites
   preload: true, // Asegúrate de que esté habilitado si lo deseas
 });
@@ -16,8 +17,8 @@ const fontLora = Lora({
   preload: true, // Asegúrate de que esté habilitado si lo deseas
 });
 
-const fontNunito = Nunito({
-  variable: "--font-nunito",
+const fontPoppins = Poppins({
+  variable: "--font-poppins",
   weight: ["300", "400", "500", "700", "900"],
   subsets: ["latin", "latin-ext"], // Aquí puedes agregar los subconjuntos que necesites
   preload: true, // Asegúrate de que esté habilitado si lo deseas
@@ -43,7 +44,7 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body
-        className={`${fontPlayfair.variable} ${fontNunito.variable} ${fontLora.variable} antialiased min-h-screen bg-white`}
+        className={`${fontMarcellus.variable} ${fontPoppins.variable} ${fontLora.variable} antialiased min-h-screen bg-white`}
       >
         <div className="flex min-h-screen flex-col">
           <Header />
