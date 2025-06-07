@@ -18,7 +18,7 @@ const WelcomeSection = () => {
                 className="rounded-lg shadow-lg"
               />
               <Image
-                src="/about.jpg"
+                src="/room-6.jpg"
                 alt="Historia del Hotel Elegante"
                 width={300}
                 height={400}

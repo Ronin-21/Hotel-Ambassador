@@ -3,10 +3,10 @@ import Button from "./button";
 
 export default function Gallery() {
   const images = [
-    { src: "/placeholder.jpg?height=600&width=800", alt: "Suite presidencial" },
-    { src: "/placeholder.jpg?height=600&width=800", alt: "Lobby principal" },
+    { src: "/room-5.jpg?height=600&width=800", alt: "Suite presidencial" },
+    { src: "/lobby.jpg?height=600&width=800", alt: "Lobby principal" },
     {
-      src: "/placeholder.jpg?height=600&width=800",
+      src: "/dinner-9.jpg?height=600&width=800",
       alt: "Restaurante gourmet",
     },
   ];
