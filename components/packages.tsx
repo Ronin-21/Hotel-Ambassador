@@ -11,42 +11,23 @@ import Button from "./button";
 export default function Packages() {
   const packages = [
     {
-      title: "Escapada Romántica",
-      description: "Perfecto para parejas que buscan una experiencia íntima",
+      title: "Desayuno Buffet",
+      description: "Disfrutá de un delicioso desayuno buffet",
       price: "$299",
-      duration: "2 noches",
-      features: [
-        "Suite con vista al mar",
-        "Cena romántica para dos",
-        "Spa para parejas",
-        "Champagne de bienvenida",
-        "Desayuno en la habitación",
-      ],
+      duration: "1 noche",
+      features: ["Desayuno buffet diario"],
     },
     {
-      title: "Aventura Familiar",
-      description: "Diversión garantizada para toda la familia",
+      title: "All Inclusive",
+      description: "Todo incluido para una experiencia sin preocupaciones",
       price: "$449",
-      duration: "3 noches",
+      duration: "1 noche",
       features: [
-        "Habitaciones familiares conectadas",
-        "Actividades para niños",
-        "Acceso completo al club de playa",
-        "Tours guiados",
-        "Todas las comidas incluidas",
-      ],
-    },
-    {
-      title: "Retiro de Bienestar",
-      description: "Rejuvenece tu cuerpo y mente",
-      price: "$599",
-      duration: "4 noches",
-      features: [
-        "Suite de lujo con terraza",
-        "Tratamientos de spa diarios",
-        "Clases de yoga y meditación",
-        "Comidas saludables gourmet",
-        "Consulta nutricional personalizada",
+        "Desayuno",
+        "Almuerzo",
+        "Merienda",
+        "Cena",
+        "Bedidas incluidas",
       ],
     },
   ];
@@ -63,11 +44,11 @@ export default function Packages() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {packages.map((pkg, index) => (
             <Card
               key={index}
-              className="border-0 shadow-lg hover:shadow-xl transition-shadow duration-300"
+              className="border-0 hover:shadow-primary shadow-xl hover:shadow-lg transition-shadow duration-300 flex flex-col justify-between h-full pb-5"
             >
               <CardHeader className="text-center pb-4">
                 <CardTitle className="text-2xl font-light text-gray-900 mb-2">
@@ -92,10 +73,10 @@ export default function Packages() {
                     </li>
                   ))}
                 </ul>
-                <Button className="w-full bg-[#268367] hover:bg-[#1e6b52] text-white">
-                  Reservar Paquete
-                </Button>
               </CardContent>
+              <Button className="self-center bg-[#268367] hover:bg-[#1e6b52] text-white">
+                Reservar Paquete
+              </Button>
             </Card>
           ))}
         </div>
