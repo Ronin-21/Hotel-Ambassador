@@ -15,7 +15,6 @@ export default function Header() {
     { href: "/galeria", label: "Galería" },
     { href: "/reservas", label: "Reservas" },
     { href: "/nosotros", label: "Historia" },
-    { href: "/contacto", label: "Contacto" },
   ];
 
   return (

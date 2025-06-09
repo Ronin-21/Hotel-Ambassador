@@ -7,27 +7,33 @@ export default function History() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="order-2 lg:order-1">
             <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-6 font-title">
-              Nuestra Historia
+              Un Proyecto con Identidad Local
             </h2>
             <div className="space-y-6 text-gray-700 leading-relaxed font-secondary">
               <p className="text-lg">
-                Desde 1952, Hotel Elegante ha sido sinónimo de hospitalidad
-                excepcional y elegancia atemporal. Fundado por la familia
-                Mendoza, nuestro hotel comenzó como una pequeña posada que
-                rápidamente se convirtió en el destino preferido de viajeros
-                distinguidos.
+                Inaugurado en 1960, el Hotel Ambassador forma parte del corazón
+                termal de Las Termas de Río Hondo. Con 66 años de historia y 67
+                temporadas activas, sigue siendo un emblema de hospitalidad para
+                quienes buscan descanso y bienestar.
               </p>
               <p className="text-lg">
-                A lo largo de más de siete décadas, hemos mantenido nuestro
-                compromiso con la excelencia, combinando la tradición con la
-                innovación moderna. Cada rincón de nuestro hotel cuenta una
-                historia de dedicación, pasión y atención al detalle.
+                En 2024, el Ambassador reabre sus puertas tras una renovación
+                total. Con una inversión significativa y el trabajo de más de
+                300 personas de la ciudad, cada detalle fue pensado para
+                combinar su esencia colonial con un diseño moderno, elegante y
+                minimalista.
               </p>
               <p className="text-lg">
-                Nuestros valores fundamentales de hospitalidad auténtica,
-                sostenibilidad ambiental y preservación cultural nos han
-                convertido en un referente en la industria hotelera, manteniendo
-                siempre el toque personal que nos caracteriza.
+                Sus 87 habitaciones fueron completamente remodeladas,
+                incorporando equipamiento de categoría premium y todos los
+                servicios que exige la hotelería actual. El resultado: una
+                experiencia sofisticada, cálida y funcional.
+              </p>
+              <p className="text-lg">
+                Esta nueva etapa proyecta al Ambassador como un hotel tres
+                estrellas superior, con visión de futuro y raíces profundas. Un
+                lugar donde tradición, calidad y calidez se encuentran para
+                crear momentos memorables.
               </p>
             </div>
             <div className="mt-8 grid grid-cols-3 gap-8 text-center">
@@ -56,7 +62,7 @@ export default function History() {
               <Image
                 src="/about.jpg"
                 alt="Historia del Hotel Elegante"
-                width={500}
+                width={600}
                 height={600}
                 className="rounded-lg shadow-lg"
               />
