@@ -19,7 +19,7 @@ export default function Gallery() {
             Galería
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto font-secondary">
-            Descubre la belleza y elegancia de nuestras instalaciones
+            Descubrí cada rincón del Ambassador
           </p>
         </div>
 

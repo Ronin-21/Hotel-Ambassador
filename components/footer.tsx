@@ -1,5 +1,12 @@
-import Link from "next/link"
-import { Facebook, Instagram, Twitter, Mail, Phone, MapPin } from "lucide-react"
+import Link from "next/link";
+import {
+  Facebook,
+  Instagram,
+  Twitter,
+  Mail,
+  Phone,
+  MapPin,
+} from "lucide-react";
 
 export default function Footer() {
   return (
@@ -7,18 +14,31 @@ export default function Footer() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-2xl font-bold text-[#268367] mb-4">Hotel Elegante</h3>
-            <p className="text-gray-300 mb-4">
-              Donde la elegancia se encuentra con la comodidad en un ambiente de lujo minimalista.
+            <h3 className="text-2xl font-bold text-[#268367] mb-4">
+              Hotel Ambassador INN
+            </h3>
+            <p className="text-gray-300 mb-4 italic">
+              Termas tiene historia! Hoy la vivís en el Hotel Ambassador INN{" "}
+              <br />
+              Tu próxima escapada empieza acá
             </p>
             <div className="flex space-x-4">
-              <Link href="#" className="text-gray-300 hover:text-[#268367] transition-colors">
+              <Link
+                href="#"
+                className="text-gray-300 hover:text-[#268367] transition-colors"
+              >
                 <Facebook className="h-6 w-6" />
               </Link>
-              <Link href="#" className="text-gray-300 hover:text-[#268367] transition-colors">
+              <Link
+                href="#"
+                className="text-gray-300 hover:text-[#268367] transition-colors"
+              >
                 <Instagram className="h-6 w-6" />
               </Link>
-              <Link href="#" className="text-gray-300 hover:text-[#268367] transition-colors">
+              <Link
+                href="#"
+                className="text-gray-300 hover:text-[#268367] transition-colors"
+              >
                 <Twitter className="h-6 w-6" />
               </Link>
             </div>
@@ -28,27 +48,42 @@ export default function Footer() {
             <h4 className="text-lg font-semibold mb-4">Enlaces Rápidos</h4>
             <ul className="space-y-2">
               <li>
-                <Link href="#inicio" className="text-gray-300 hover:text-[#268367] transition-colors">
+                <Link
+                  href="#inicio"
+                  className="text-gray-300 hover:text-[#268367] transition-colors"
+                >
                   Inicio
                 </Link>
               </li>
               <li>
-                <Link href="#galeria" className="text-gray-300 hover:text-[#268367] transition-colors">
+                <Link
+                  href="#galeria"
+                  className="text-gray-300 hover:text-[#268367] transition-colors"
+                >
                   Galería
                 </Link>
               </li>
               <li>
-                <Link href="#paquetes" className="text-gray-300 hover:text-[#268367] transition-colors">
+                <Link
+                  href="#paquetes"
+                  className="text-gray-300 hover:text-[#268367] transition-colors"
+                >
                   Paquetes
                 </Link>
               </li>
               <li>
-                <Link href="#historia" className="text-gray-300 hover:text-[#268367] transition-colors">
+                <Link
+                  href="#historia"
+                  className="text-gray-300 hover:text-[#268367] transition-colors"
+                >
                   Historia
                 </Link>
               </li>
               <li>
-                <Link href="#ubicacion" className="text-gray-300 hover:text-[#268367] transition-colors">
+                <Link
+                  href="#ubicacion"
+                  className="text-gray-300 hover:text-[#268367] transition-colors"
+                >
                   Ubicación
                 </Link>
               </li>
@@ -71,7 +106,9 @@ export default function Footer() {
             <div className="space-y-3">
               <div className="flex items-center">
                 <MapPin className="h-5 w-5 text-[#268367] mr-3" />
-                <span className="text-gray-300">Avenida Principal 123, Ciudad</span>
+                <span className="text-gray-300">
+                  Avenida Libertad N°120, Las Termas de Río Hondo
+                </span>
               </div>
               <div className="flex items-center">
                 <Phone className="h-5 w-5 text-[#268367] mr-3" />
@@ -86,9 +123,12 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-gray-800 mt-12 pt-8 text-center">
-          <p className="text-gray-300">© 2024 Hotel Elegante. Todos los derechos reservados.</p>
+          <p className="text-gray-300">
+            © 2025 Hotel Ambassador · Todos los derechos reservados · Sitio
+            desarrollado por Ronin WebDesign
+          </p>
         </div>
       </div>
     </footer>
-  )
+  );
 }

@@ -4,11 +4,12 @@ export default function Location() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-4 font-title">
-            Nuestra Ubicación
+            Dónde encontrarnos
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto font-secondary">
-            Estratégicamente ubicado en el corazón de la ciudad, con fácil
-            acceso a las principales atracciones
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto font-secondary">
+            Estratégicamente ubicado para que disfrutes todo lo que ofrece la
+            ciudad. <br />
+            Cerca del centro y de los principales atractivos turísticos
           </p>
         </div>
 
@@ -19,11 +20,11 @@ export default function Location() {
                 Dirección
               </h3>
               <p className="text-gray-700 text-lg">
-                Avenida Principal 123
+                Avenida Libertad N°120
                 <br />
-                Centro Histórico
+                Las Termas de Río Hondo
                 <br />
-                Ciudad, País 12345
+                Santiago del Estero, Argentina
               </p>
             </div>
 
@@ -33,15 +34,15 @@ export default function Location() {
               </h3>
               <ul className="space-y-2 text-gray-700">
                 <li className="flex justify-between">
-                  <span>Centro Comercial Plaza</span>
+                  <span>Plaza Miguel de Guemes</span>
                   <span className="text-[#268367]">2 min</span>
                 </li>
                 <li className="flex justify-between">
-                  <span>Museo de Arte Contemporáneo</span>
+                  <span>Casino del Sol</span>
                   <span className="text-[#268367]">5 min</span>
                 </li>
                 <li className="flex justify-between">
-                  <span>Catedral Principal</span>
+                  <span>Iglesia Perpetuo Socorro</span>
                   <span className="text-[#268367]">8 min</span>
                 </li>
                 <li className="flex justify-between">

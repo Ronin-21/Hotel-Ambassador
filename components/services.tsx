@@ -27,11 +27,9 @@ const Services = () => {
             </h2>
             <div className="space-y-6 text-gray-700 leading-relaxed font-secondary">
               <p className="text-lg text-center">
-                Desde 1952, Hotel Elegante ha sido sinónimo de hospitalidad
-                excepcional y elegancia atemporal. Fundado por la familia
-                Mendoza, nuestro hotel comenzó como una pequeña posada que
-                rápidamente se convirtió en el destino preferido de viajeros
-                distinguidos.
+                Relajate en un entorno cálido y armonioso. Nuestro spa ofrece
+                tratamientos revitalizantes, masajes terapéuticos y circuitos de
+                relajación para que tu experiencia sea única.
               </p>
             </div>
             <Button>
@@ -62,11 +60,9 @@ const Services = () => {
             </h2>
             <div className="space-y-6 text-gray-700 leading-relaxed font-secondary">
               <p className="text-lg text-center">
-                Desde 1952, Hotel Elegante ha sido sinónimo de hospitalidad
-                excepcional y elegancia atemporal. Fundado por la familia
-                Mendoza, nuestro hotel comenzó como una pequeña posada que
-                rápidamente se convirtió en el destino preferido de viajeros
-                distinguidos.
+                Mantené tu rutina de ejercicio incluso durante tus vacaciones.
+                Equipado con máquinas modernas, nuestro gimnasio está disponible
+                para que te sientas bien, cada día.
               </p>
             </div>
             <Button>
@@ -97,11 +93,9 @@ const Services = () => {
             </h2>
             <div className="space-y-6 text-gray-700 leading-relaxed font-secondary">
               <p className="text-lg text-center">
-                Desde 1952, Hotel Elegante ha sido sinónimo de hospitalidad
-                excepcional y elegancia atemporal. Fundado por la familia
-                Mendoza, nuestro hotel comenzó como una pequeña posada que
-                rápidamente se convirtió en el destino preferido de viajeros
-                distinguidos.
+                Conectá con tu bienestar interior. La calidez del sauna te ayuda
+                a liberar tensiones, mejorar la circulación y disfrutar un
+                momento de desconexión total.
               </p>
             </div>
             <Button>

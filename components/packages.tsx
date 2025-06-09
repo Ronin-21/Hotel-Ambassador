@@ -59,8 +59,7 @@ export default function Packages() {
             Paquetes Turísticos
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto font-secondary">
-            Experiencias cuidadosamente diseñadas para crear recuerdos
-            inolvidables
+            Elegí el paquete ideal para tu próxima escapada
           </p>
         </div>
 

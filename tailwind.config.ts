@@ -77,6 +77,7 @@ const config: Config = {
         primary: ["Poppins", "serif"],
         secondary: ["Lora", "serif"],
         title: ["'Marcellus'", "serif"],
+        hero: ["'Eczar'", "serif"],
       },
     },
   },

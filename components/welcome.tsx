@@ -11,36 +11,42 @@ const WelcomeSection = () => {
           <div className="order-1">
             <div className="relative">
               <Image
-                src="/about.jpg"
+                src="/hero.jpg"
                 alt="Historia del Hotel Elegante"
-                width={500}
+                width={600}
                 height={600}
                 className="rounded-lg shadow-lg"
               />
               <Image
-                src="/room-6.jpg"
+                src="/lobby-1.jpg"
                 alt="Historia del Hotel Elegante"
                 width={300}
                 height={400}
-                className="absolute -bottom-16 -left-16 ring-[8px] ring-white"
+                className="absolute -bottom-16 -left-12 ring-[10px] ring-white shadow-lg"
               />
             </div>
           </div>
           {/* text content */}
           <div className="order-2 flex flex-col items-start space-y-6">
             <h4 className="md:text-xl font-medium text-[#268367] font-primary uppercase">
-              Nuestra Historia
+              Un Futuro con Historia
             </h4>
             <h2 className="text-4xl md:text-5xl font-light text-gray-900 font-title">
-              Bienvenidos a Ambassador
+              Bienvenidos al renovado Hotel Ambassador INN
             </h2>
             <div className="space-y-6 text-gray-700 leading-relaxed font-secondary">
               <p className="text-lg">
-                Desde 1952, Hotel Elegante ha sido sinónimo de hospitalidad
-                excepcional y elegancia atemporal. Fundado por la familia
-                Mendoza, nuestro hotel comenzó como una pequeña posada que
-                rápidamente se convirtió en el destino preferido de viajeros
-                distinguidos.
+                Ícono termal desde 1960, el Hotel Ambassador reabre sus puertas
+                completamente renovado para ofrecer una experiencia única en Las
+                Termas de Río Hondo. Con un diseño que honra su esencia colonial
+                y la elegancia de la hotelería moderna, cada espacio ha sido
+                pensado para brindar confort, bienestar y calidez. <br />
+                Más que una renovación, es un renacer: 87 habitaciones premium,
+                instalaciones de primer nivel y una profunda conexión con la
+                comunidad local —más de 300 trabajadores y proveedores termenses
+                participaron en esta gran transformación. <br />
+                Hoy vuelve a brillar como un símbolo de hospitalidad y
+                compromiso con el turismo de calidad.
               </p>
             </div>
             <Button>
