@@ -15,10 +15,10 @@ export default function Home() {
       <Hero />
       <Amenities />
       <WelcomeSection />
-      <Banner />
       <Gallery />
-      <Packages />
       <Services />
+      <Packages />
+      <Banner />
       <Location />
       <WhatsAppButton />
     </main>

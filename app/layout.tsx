@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     template: "%s - Hotel Ambassador INN",
   },
   description:
-    "Expertos en implementación y mantenimiento de software para tu negocio. Confía en nosotros para un soporte confiable y profesional.",
+    "Descubre el Hotel Ambassador INN, tu refugio de lujo en la ciudad. Disfruta de habitaciones elegantes, servicios excepcionales y una ubicación inmejorable. ¡Reserva ahora y vive una experiencia inolvidable!",
   twitter: {
     card: "summary_large_image",
   },

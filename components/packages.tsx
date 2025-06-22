@@ -1,34 +1,20 @@
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import { Check } from "lucide-react";
-import Button from "./button";
+import Image from "next/image";
 
 export default function Packages() {
   const packages = [
     {
       title: "Desayuno Buffet",
       description: "Disfrutá de un delicioso desayuno buffet",
-      price: "$299",
+      image: "/room-1.jpg",
+      price: "$10.000",
       duration: "1 noche",
-      features: ["Desayuno buffet diario"],
     },
     {
       title: "All Inclusive",
       description: "Todo incluido para una experiencia sin preocupaciones",
-      price: "$449",
+      image: "/room-2.jpg",
+      price: "$15.000",
       duration: "1 noche",
-      features: [
-        "Desayuno",
-        "Almuerzo",
-        "Merienda",
-        "Cena",
-        "Bedidas incluidas",
-      ],
     },
   ];
 
@@ -46,38 +32,28 @@ export default function Packages() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {packages.map((pkg, index) => (
-            <Card
+            <div
               key={index}
-              className="border-0 hover:shadow-primary shadow-xl hover:shadow-lg transition-shadow duration-300 flex flex-col justify-between h-full pb-5"
+              className="border-0 hover:shadow-black/60 shadow-xl hover:shadow-lg hover:scale-105 transition-all duration-300 flex flex-col items-center justify-between rounded-lg overflow-hidden bg-white"
             >
-              <CardHeader className="text-center pb-4">
-                <CardTitle className="text-2xl font-light text-gray-900 mb-2">
-                  {pkg.title}
-                </CardTitle>
-                <CardDescription className="text-gray-600 mb-4">
-                  {pkg.description}
-                </CardDescription>
-                <div className="text-center">
-                  <span className="text-4xl font-light text-[#268367]">
-                    {pkg.price}
-                  </span>
-                  <span className="text-gray-500 ml-2">/ {pkg.duration}</span>
+              <div className="w-full h-64 relative">
+                <Image
+                  src={pkg.image}
+                  alt="card image"
+                  fill
+                  className="object-cover"
+                />
+                <div className="rounded-full h-36 w-36 shadow-xl shadow-black/30 bg-white absolute -bottom-12 right-5 flex items-center justify-center hover:bg-primary hover:text-white transition-all duration-300">
+                  <p className="font-title font-semibold text-2xl">{pkg.price}</p>
                 </div>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-3 mb-6">
-                  {pkg.features.map((feature, featureIndex) => (
-                    <li key={featureIndex} className="flex items-center">
-                      <Check className="h-5 w-5 text-[#268367] mr-3 flex-shrink-0" />
-                      <span className="text-gray-700">{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-              </CardContent>
-              <Button className="self-center bg-[#268367] hover:bg-[#1e6b52] text-white">
-                Reservar Paquete
-              </Button>
-            </Card>
+              </div>
+              <div className="text-center w-full h-60 p-4 flex flex-col items-center">
+                <p className="text-2xl text-gray-900 mb-5 mt-8">{pkg.title}</p>
+                <p className="text-gray-600 font-secondary">
+                  {pkg.description}
+                </p>
+              </div>
+            </div>
           ))}
         </div>
       </div>

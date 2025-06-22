@@ -12,7 +12,7 @@ export default function Gallery() {
   ];
 
   return (
-    <section id="galeria" className="py-20 bg-gray-50">
+    <section id="galeria" className="py-20 bg-white">
       <div className="container flex flex-col gap-10">
         <div className="text-center">
           <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-4 font-title">
@@ -43,7 +43,7 @@ export default function Gallery() {
           ))}
         </div>
         <Button className="self-center">
-          <a href="/gallery" className="text-white">
+          <a href="/galeria" className="text-white">
             Ver más
           </a>
         </Button>

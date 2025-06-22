@@ -7,13 +7,24 @@ export default function Hero() {
       className="relative h-screen flex items-center justify-center overflow-hidden"
     >
       <div className="absolute inset-0 z-0">
-        <Image
+        {/* Video de fondo */}
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute w-full h-full object-cover"
+      >
+        <source src="/intro.mp4" type="video/mp4" />
+        Tu navegador no soporta el video HTML5.
+      </video>
+        {/* <Image
           src="/about.jpg"
           alt="Hotel Elegante - Vista principal"
           fill
           className="object-cover"
           priority
-        />
+        /> */}
         <div className="absolute inset-0 bg-black/60" />
       </div>
 
