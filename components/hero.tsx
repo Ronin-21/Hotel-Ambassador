@@ -8,16 +8,16 @@ export default function Hero() {
     >
       <div className="absolute inset-0 z-0">
         {/* Video de fondo */}
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        className="absolute w-full h-full object-cover"
-      >
-        <source src="/intro.mp4" type="video/mp4" />
-        Tu navegador no soporta el video HTML5.
-      </video>
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute w-full h-full object-cover"
+        >
+          <source src="/intro.mp4" type="video/mp4" />
+          Tu navegador no soporta el video HTML5.
+        </video>
         {/* <Image
           src="/about.jpg"
           alt="Hotel Elegante - Vista principal"
@@ -29,11 +29,11 @@ export default function Hero() {
       </div>
 
       <div className="relative z-10 text-center text-white max-w-5xl mx-auto px-4">
-        <h1 className="text-5xl md:text-7xl mb-6 tracking-wide font-semibold uppercase font-hero">
-          Tu refugio de elegancia y bienestar
+        <h1 className="text-5xl md:text-7xl mb-6 font-semibold uppercase font-hero">
+          Descubrí un nuevo modo de vivir Termas
         </h1>
         <h2 className="text-xl md:text-3xl mb-8 font-light max-w-3xl mx-auto leading-relaxed italic font-secondary">
-          Viví Termas de Río Hondo como nunca antes!
+          Tu refugio termal de confort y descanso
         </h2>
       </div>
     </section>

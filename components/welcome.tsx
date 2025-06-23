@@ -1,9 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import Button from "./button";
 import Link from "next/link";
-import { use, useState } from "react";
+import { useState } from "react";
+import Button from "./button";
 
 const WelcomeSection = () => {
   const [imgPrincipal, setImgPrincipal] = useState(true);

@@ -10,7 +10,8 @@ interface ButtonProps {
 
 const buttonVariants = {
   variant: {
-    default: "bg-primary text-primary-foreground hover:bg-primary/90",
+    default:
+      "bg-primary text-primary-foreground hover:bg-primary/90 rounded-sm",
     destructive:
       "bg-destructive text-destructive-foreground hover:bg-destructive/90",
     outline:

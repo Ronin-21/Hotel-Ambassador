@@ -1,12 +1,13 @@
-import Link from "next/link";
 import {
   Facebook,
   Instagram,
-  Twitter,
   Mail,
-  Phone,
   MapPin,
+  Phone,
+  Twitter,
 } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -14,13 +15,16 @@ export default function Footer() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-2xl font-bold text-[#268367] mb-4">
-              Hotel Ambassador INN
-            </h3>
-            <p className="text-gray-300 mb-4 italic">
+            <Image
+              src={"/Ambassador-logo1.svg"}
+              alt="logo"
+              width={200}
+              height={100}
+            />
+            <p className="text-gray-300 my-4 italic">
               Termas tiene historia! Hoy la vivís en el Hotel Ambassador INN{" "}
               <br />
-              Tu próxima escapada empieza acá
+              Tu próxima escapada empieza acá!
             </p>
             <div className="flex space-x-4">
               <Link
@@ -49,7 +53,7 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link
-                  href="#inicio"
+                  href="/"
                   className="text-gray-300 hover:text-[#268367] transition-colors"
                 >
                   Inicio
@@ -57,7 +61,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="#galeria"
+                  href="/galeria"
                   className="text-gray-300 hover:text-[#268367] transition-colors"
                 >
                   Galería
@@ -65,15 +69,15 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="#paquetes"
+                  href="#servicios"
                   className="text-gray-300 hover:text-[#268367] transition-colors"
                 >
-                  Paquetes
+                  Servicios
                 </Link>
               </li>
               <li>
                 <Link
-                  href="#historia"
+                  href="/nosotros"
                   className="text-gray-300 hover:text-[#268367] transition-colors"
                 >
                   Historia
@@ -93,11 +97,11 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4">Servicios</h4>
             <ul className="space-y-2 text-gray-300">
-              <li>Spa & Wellness</li>
-              <li>Restaurante Gourmet</li>
-              <li>Centro de Negocios</li>
-              <li>Servicio de Habitaciones</li>
-              <li>Concierge 24/7</li>
+              <li>Spa y Gimnasio</li>
+              <li>Restaurante</li>
+              <li>Shows y Recreación</li>
+              <li>Piletas y Sauna</li>
+              <li>Estacionamiento</li>
             </ul>
           </div>
 
@@ -112,11 +116,11 @@ export default function Footer() {
               </div>
               <div className="flex items-center">
                 <Phone className="h-5 w-5 text-[#268367] mr-3" />
-                <span className="text-gray-300">+1 (555) 123-4567</span>
+                <span className="text-gray-300">+54 9 (3858) 47-2023</span>
               </div>
               <div className="flex items-center">
                 <Mail className="h-5 w-5 text-[#268367] mr-3" />
-                <span className="text-gray-300">info@hotelelegante.com</span>
+                <span className="text-gray-300">info@hotelambassador.com</span>
               </div>
             </div>
           </div>

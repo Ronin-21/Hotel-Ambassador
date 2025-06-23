@@ -24,7 +24,7 @@ export default function AboutPage() {
       <History />
 
       {/* Values Section */}
-      <section className="bg-gray-50 py-16 px-4 md:px-6">
+      <section className="bg-white py-20 px-4 md:px-6">
         <div className="container mx-auto">
           <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-6 font-title text-center">
             Nuestros Valores
@@ -107,7 +107,7 @@ export default function AboutPage() {
       </section>
 
       {/* Team Section */}
-      <section className="py-16 px-4 md:px-6">
+      {/* <section className="py-16 px-4 md:px-6">
         <div className="container mx-auto">
           <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-12 font-title text-center">
             Nuestro Equipo Directivo
@@ -164,7 +164,7 @@ export default function AboutPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }

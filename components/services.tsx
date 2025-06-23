@@ -1,5 +1,3 @@
-import Link from "next/link";
-import Button from "./button";
 import Image from "next/image";
 
 const Services = () => {
@@ -32,11 +30,6 @@ const Services = () => {
                 relajación para que tu experiencia sea única.
               </p>
             </div>
-            <Button>
-              <Link href="/about" className="text-white">
-                Leer más
-              </Link>
-            </Button>
           </div>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center">
@@ -65,11 +58,6 @@ const Services = () => {
                 para que te sientas bien, cada día.
               </p>
             </div>
-            <Button>
-              <Link href="/about" className="text-white">
-                Leer más
-              </Link>
-            </Button>
           </div>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center">
@@ -98,11 +86,6 @@ const Services = () => {
                 momento de desconexión total.
               </p>
             </div>
-            <Button>
-              <Link href="/about" className="text-white">
-                Leer más
-              </Link>
-            </Button>
           </div>
         </div>
       </div>

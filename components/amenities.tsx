@@ -1,5 +1,4 @@
-import { Calendar, Car, Utensils, Waves, Drama, Coffee } from "lucide-react";
-import React from "react";
+import { Car, Coffee, Drama, Waves } from "lucide-react";
 
 const Amenities = () => {
   return (
