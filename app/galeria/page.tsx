@@ -28,27 +28,27 @@ const images: Record<TabKey, string[]> = {
   ],
   restaurante: [
     "/dinner-1.jpg",
+    "/dinner-2.jpg",
+    "/dinner-3.jpg",
+    "/dinner-4.jpg",
     "/dinner-9.jpg",
-    "/dinner-10.jpg",
-    "/dinner-9.jpg",
-    "/dinner-1.jpg",
     "/dinner-10.jpg",
   ],
   spa: [
     "/pool-1.jpg",
-    "/spa-1.jpg",
     "/pool-4.jpg",
-    "/spa.jpg",
-    "/pool-1.jpg",
+    "/pool-3.jpg",
     "/spa-1.jpg",
+    "/spa.jpg",
+    "/spa-2.jpg",
   ],
   eventos: [
     "/lobby.jpg",
     "/services2.jpg",
     "/lobby-1.jpg",
-    "/placeholder.jpg",
-    "/lobby.jpg",
-    "/placeholder.jpg",
+    "/dinner-5.jpg",
+    "/pool-5.jpg",
+    "/hotel-3.jpg",
   ],
 };
 
@@ -60,7 +60,7 @@ export default function GalleryPage() {
       {/* Hero Section */}
       <section className="relative h-[40vh] w-full">
         <Image
-          src="/placeholder.jpg?height=800&width=1920"
+          src="/hotel-3.jpg?height=800&width=1920"
           alt="Grand Hotel Gallery"
           fill
           className="object-cover brightness-75"

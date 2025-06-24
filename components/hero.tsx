@@ -6,7 +6,7 @@ export default function Hero() {
       id="inicio"
       className="relative h-screen flex items-center justify-center overflow-hidden"
     >
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 z-0 bg-black">
         {/* Video de fondo */}
         <video
           autoPlay
@@ -15,7 +15,7 @@ export default function Hero() {
           playsInline
           className="absolute w-full h-full object-cover"
         >
-          <source src="/intro.mp4" type="video/mp4" />
+          <source src="/intro-2.mp4" type="video/mp4" />
           Tu navegador no soporta el video HTML5.
         </video>
         {/* <Image

@@ -15,7 +15,7 @@ const WelcomeSection = () => {
           {/* images */}
           <div className="order-1 flex justify-center relative h-full mb-40">
             <Image
-              src={"/hero.jpg"}
+              src={"/hotel-2.jpg"}
               alt="Historia del Hotel Elegante"
               width={600}
               height={600}
@@ -25,7 +25,7 @@ const WelcomeSection = () => {
               }`}
             />
             <Image
-              src={"/lobby-1.jpg"}
+              src={"/hotel-1.jpg"}
               alt="Historia del Hotel Elegante"
               width={600}
               height={600}
@@ -35,7 +35,7 @@ const WelcomeSection = () => {
               }`}
             />
             <Image
-              src="/hero.jpg"
+              src="/hotel-2.jpg"
               alt="Historia del Hotel Elegante"
               width={300}
               height={400}
@@ -45,7 +45,7 @@ const WelcomeSection = () => {
               }`}
             />
             <Image
-              src="/lobby-1.jpg"
+              src="/hotel-1.jpg"
               alt="Historia del Hotel Elegante"
               width={300}
               height={400}

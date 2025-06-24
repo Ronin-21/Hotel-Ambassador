@@ -2,7 +2,10 @@ import Image from "next/image";
 
 const Services = () => {
   return (
-    <section className="py-40 bg-gray-50 flex items-center justify-center">
+    <section
+      id="servicios"
+      className="py-40 bg-gray-50 flex items-center justify-center"
+    >
       <div className="container px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center">
           {/* images */}
@@ -36,7 +39,7 @@ const Services = () => {
           {/* images */}
           <div className="order-2 h-[500px]">
             <Image
-              src="/pool-1.jpg"
+              src="/pool-3.jpg"
               alt="Historia del Hotel Elegante"
               width={500}
               height={600}

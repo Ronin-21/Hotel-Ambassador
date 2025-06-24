@@ -39,7 +39,7 @@ export default function History() {
             <div className="mt-8 grid grid-cols-3 gap-8 text-center">
               <div>
                 <div className="text-3xl font-light text-[#268367] mb-2">
-                  70+
+                  60+
                 </div>
                 <div className="text-gray-600">Años de Historia</div>
               </div>
@@ -51,23 +51,23 @@ export default function History() {
               </div>
               <div>
                 <div className="text-3xl font-light text-[#268367] mb-2">
-                  25+
+                  80+
                 </div>
-                <div className="text-gray-600">Premios Recibidos</div>
+                <div className="text-gray-600">Habitaciones</div>
               </div>
             </div>
           </div>
           <div className="order-1 lg:order-2">
             <div className="relative">
               <Image
-                src="/about.jpg"
+                src="/hotel-1.jpg"
                 alt="Historia del Hotel Elegante"
                 width={600}
                 height={600}
                 className="rounded-lg shadow-lg"
               />
-              <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-[#268367] rounded-lg opacity-20" />
-              <div className="absolute -top-6 -right-6 w-24 h-24 bg-[#268367] rounded-lg opacity-10" />
+              <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-[#268367] rounded-lg opacity-30" />
+              <div className="absolute -top-6 -right-6 w-24 h-24 bg-[#268367] rounded-lg opacity-30" />
             </div>
           </div>
         </div>

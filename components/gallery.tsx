@@ -3,11 +3,11 @@ import Button from "./button";
 
 export default function Gallery() {
   const images = [
-    { src: "/room-5.jpg?height=600&width=800", alt: "Suite presidencial" },
-    { src: "/lobby.jpg?height=600&width=800", alt: "Lobby principal" },
+    { src: "/room-5.jpg?height=600&width=800", alt: "Habitaciones" },
+    { src: "/lobby.jpg?height=600&width=800", alt: "Sala principal" },
     {
       src: "/dinner-9.jpg?height=600&width=800",
-      alt: "Restaurante gourmet",
+      alt: "Restaurante",
     },
   ];
 
@@ -27,7 +27,7 @@ export default function Gallery() {
           {images.map((image, index) => (
             <div
               key={index}
-              className="group relative overflow-hidden rounded-lg aspect-[4/3] cursor-pointer"
+              className="group relative overflow-hidden rounded-lg aspect-[4/3]"
             >
               <Image
                 src={image.src || "/placeholder.jpg"}
