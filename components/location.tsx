@@ -57,9 +57,8 @@ export default function Location() {
                 Transporte
               </h3>
               <p className="text-gray-700">
-                Servicio de traslado gratuito desde el aeropuerto. Estación de
-                metro a 3 cuadras. Estacionamiento privado disponible para
-                huéspedes.
+                Servicio de traslado gratuito desde el aeropuerto.
+                Estacionamiento privado disponible para huéspedes.
               </p>
             </div>
           </div>
