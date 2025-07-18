@@ -5,14 +5,14 @@ export default function Packages() {
     {
       title: "Desayuno Buffet",
       description: "Disfrutá de un delicioso desayuno buffet",
-      image: "/room-1.jpg",
+      image: "/room-1.webp",
       price: "$10.000",
       duration: "1 noche",
     },
     {
       title: "All Inclusive",
       description: "Todo incluido para una experiencia sin preocupaciones",
-      image: "/room-2.jpg",
+      image: "/room-2.webp",
       price: "$15.000",
       duration: "1 noche",
     },
@@ -44,7 +44,9 @@ export default function Packages() {
                   className="object-cover"
                 />
                 <div className="rounded-full h-36 w-36 shadow-xl shadow-black/30 bg-white absolute -bottom-12 right-5 flex items-center justify-center hover:bg-primary hover:text-white transition-all duration-300">
-                  <p className="font-title font-semibold text-2xl">{pkg.price}</p>
+                  <p className="font-title font-semibold text-2xl">
+                    {pkg.price}
+                  </p>
                 </div>
               </div>
               <div className="text-center w-full h-60 p-4 flex flex-col items-center">

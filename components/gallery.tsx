@@ -3,10 +3,10 @@ import Button from "./button";
 
 export default function Gallery() {
   const images = [
-    { src: "/room-5.jpg?height=600&width=800", alt: "Habitaciones" },
-    { src: "/lobby.jpg?height=600&width=800", alt: "Sala principal" },
+    { src: "/room-5.webp?height=600&width=800", alt: "Habitaciones" },
+    { src: "/lobby.webp?height=600&width=800", alt: "Sala principal" },
     {
-      src: "/dinner-9.jpg?height=600&width=800",
+      src: "/dinner-9.webp?height=600&width=800",
       alt: "Restaurante",
     },
   ];
@@ -30,7 +30,7 @@ export default function Gallery() {
               className="group relative overflow-hidden rounded-lg aspect-[4/3]"
             >
               <Image
-                src={image.src || "/placeholder.jpg"}
+                src={image.src || "/hotel-3.webp"}
                 alt={image.alt}
                 fill
                 className="object-cover transition-transform duration-500 group-hover:scale-110"

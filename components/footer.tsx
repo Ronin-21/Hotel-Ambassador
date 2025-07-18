@@ -116,11 +116,13 @@ export default function Footer() {
               </div>
               <div className="flex items-center">
                 <Phone className="h-5 w-5 text-[#268367] mr-3" />
-                <span className="text-gray-300">+54 9 (3858) 47-2023</span>
+                <span className="text-gray-300">+54 9 (3858) 53-7778</span>
               </div>
               <div className="flex items-center">
                 <Mail className="h-5 w-5 text-[#268367] mr-3" />
-                <span className="text-gray-300">info@hotelambassador.com</span>
+                <span className="text-gray-300">
+                  ideasdelnortesrl@yahoo.com.ar
+                </span>
               </div>
             </div>
           </div>

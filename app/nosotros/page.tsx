@@ -7,7 +7,7 @@ export default function AboutPage() {
       {/* Hero Section */}
       <section className="relative h-[40vh] w-full">
         <Image
-          src="/hotel-3.jpg?height=800&width=1920"
+          src="/hotel-3.webp?height=800&width=1920"
           alt="Grand Hotel Interior"
           fill
           className="object-cover brightness-75"

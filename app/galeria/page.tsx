@@ -19,36 +19,36 @@ const tabs: Tab[] = [
 
 const images: Record<TabKey, string[]> = {
   habitaciones: [
-    "/room-1.jpg",
-    "/room-2.jpg",
-    "/room-3.jpg",
-    "/room-4.jpg",
-    "/room-5.jpg",
-    "/room-6.jpg",
+    "/room-1.webp",
+    "/room-2.webp",
+    "/room-3.webp",
+    "/room-4.webp",
+    "/room-5.webp",
+    "/room-6.webp",
   ],
   restaurante: [
-    "/dinner-1.jpg",
-    "/dinner-2.jpg",
-    "/dinner-3.jpg",
-    "/dinner-4.jpg",
-    "/dinner-9.jpg",
-    "/dinner-10.jpg",
+    "/dinner-1.webp",
+    "/dinner-2.webp",
+    "/dinner-3.webp",
+    "/dinner-4.webp",
+    "/dinner-9.webp",
+    "/dinner-10.webp",
   ],
   spa: [
-    "/pool-1.jpg",
-    "/pool-4.jpg",
-    "/pool-3.jpg",
-    "/spa-1.jpg",
-    "/spa.jpg",
-    "/spa-2.jpg",
+    "/pool-1.webp",
+    "/pool-4.webp",
+    "/pool-3.webp",
+    "/spa-1.webp",
+    "/spa.webp",
+    "/spa-2.webp",
   ],
   eventos: [
-    "/lobby.jpg",
-    "/services2.jpg",
-    "/lobby-1.jpg",
-    "/dinner-5.jpg",
-    "/pool-5.jpg",
-    "/hotel-3.jpg",
+    "/lobby.webp",
+    "/services2.webp",
+    "/lobby-1.webp",
+    "/dinner-5.webp",
+    "/pool-5.webp",
+    "/hotel-3.webp",
   ],
 };
 
@@ -60,7 +60,7 @@ export default function GalleryPage() {
       {/* Hero Section */}
       <section className="relative h-[40vh] w-full">
         <Image
-          src="/hotel-3.jpg?height=800&width=1920"
+          src="/hotel-3.webp?height=800&width=1920"
           alt="Grand Hotel Gallery"
           fill
           className="object-cover brightness-75"

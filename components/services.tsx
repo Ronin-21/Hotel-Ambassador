@@ -11,7 +11,7 @@ const Services = () => {
           {/* images */}
           <div className="order-2 h-[500px]">
             <Image
-              src="/spa-1.jpg"
+              src="/spa-1.webp"
               alt="Historia del Hotel Elegante"
               width={500}
               height={600}
@@ -39,7 +39,7 @@ const Services = () => {
           {/* images */}
           <div className="order-2 h-[500px]">
             <Image
-              src="/pool-3.jpg"
+              src="/pool-3.webp"
               alt="Historia del Hotel Elegante"
               width={500}
               height={600}
@@ -67,7 +67,7 @@ const Services = () => {
           {/* images */}
           <div className="order-3 h-[500px]">
             <Image
-              src="/pool-4.jpg"
+              src="/pool-4.webp"
               alt="Historia del Hotel Elegante"
               width={500}
               height={600}

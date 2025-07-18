@@ -60,7 +60,7 @@ export default function History() {
           <div className="order-1 lg:order-2">
             <div className="relative">
               <Image
-                src="/hotel-1.jpg"
+                src="/hotel-1.webp"
                 alt="Historia del Hotel Elegante"
                 width={600}
                 height={600}
